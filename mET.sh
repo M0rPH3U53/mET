@@ -61,7 +61,7 @@ if [[ "${ssl_cert}" != *"ssl-cert"* ]]; then
     exit 1
 else
     echo " "
-    echo -ne "🖥️  ${BLANC}Hotes${RESET}"
+    echo -ne "🖥️ ${BLANC}Hotes${RESET}"
     echo " "
     echo " "
     echo -ne "${VERT}[+]${RESET} ${hote}"
