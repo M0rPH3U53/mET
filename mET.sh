@@ -25,7 +25,7 @@ JAUNE='\033[0;33m'
 # Dossier pour fichiers info certif SSL
 mkdir -p mET
 
-# Recupere adresse réseau + CIDR
+# Adresse réseau + CIDR
 IP=$(ip route | grep -E '^[0-9]' | awk '{print $1}')
 
 echo " "
