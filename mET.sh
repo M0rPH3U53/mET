@@ -55,8 +55,8 @@ done
 
 echo -e "${JAUNE}100%${RESET}"
 
-# Verifie si ssl-cert est present dans le scan
-if [[ "${ssl_cert}" != *"ssl-cert"* ]]; then
+# Verifie si la variable est vide
+if [ -z "${ssl_cert}" ]; then
     echo "❌ Aucun Certificat SSL"
     exit 1
 else
