@@ -41,7 +41,7 @@ by M0rPH3U53
  
 💾 Sauvegardé --> /home/m0rph3u5/Scripts/mET
 ```
-## Info SSL
+## 🔐 Info SSL
 
 ```
 ┌─[m0rph3u5@parrot]─[~/Scripts/mET]
