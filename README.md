@@ -2,9 +2,10 @@
 
 Récupere les info de certificat SSL de maniere automatiser
 
-👁️ nmap --> https://nmap.org
-
-🖥️ netdiscover --> https://www.kali.org/tools/netdiscover/
+| outils | URLS |
+| --- | --- |
+| 👁️ nmap | https://nmap.org |
+| 🖥️ netdiscover | https://www.kali.org/tools/netdiscover/ |
 
 ## 🛠️ Outils
 
