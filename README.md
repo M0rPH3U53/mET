@@ -1,6 +1,6 @@
 # mET
 
-Automatisation pour recuperer des info de certificat SSL
+Recuper les info de certificat SSL de maniere automatiser
 
 👁️ nmap --> https://nmap.org
 
