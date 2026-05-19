@@ -65,7 +65,7 @@ else
     echo " "
     echo " "
     echo -ne "${VERT}[+]${RESET} ${hote}"
-    echo "${ssl_cert}" > "${hote}-certSSL.txt"
+    echo "${ssl_cert}" > "${dir}/mET/${hote}-certSSL.txt"
     echo " "
     echo " "
     echo -e "💾 Sauvegardé --> "${dir}"/mET"
