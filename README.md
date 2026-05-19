@@ -36,7 +36,7 @@ by M0rPH3U53
  
 🔍 Scan ssl-cert...100%
  
-📡 Hotes 
+🖥️ Hotes 
  
 [+] 192.168.56.254 
  
