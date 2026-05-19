@@ -42,7 +42,7 @@ read network
 hotes=$(netdiscover -r ${network} -P | grep -E '[0-9]+\.' | awk '{print $1}')
 
 
-# Chemin du fichier
+# Chemin fichier
 dir=$(pwd)
 
 echo " "
