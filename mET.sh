@@ -41,32 +41,37 @@ read network
 # Découverte réseau
 hotes=$(netdiscover -r ${network} -P | grep -E '[0-9]+\.' | awk '{print $1}')
 
-
-# Chemin fichier
+# Chemin
 dir=$(pwd)
 
 echo " "
 echo -ne "🔍 ${BLANC}Scan ssl-cert...${RESET}"
+hotes_cert=""
 
-# Recupere info certificat SSL
+# Scan chaque hotes
 for hote in ${hotes}; do
-    ssl_cert=$(nmap -sT --open --script ssl-cert ${hote} -vv | grep -B1 "^|")
+    ssl_cert=$(nmap -sT --open --script ssl-cert "${hote}" -vv 2>/dev/null | grep -B1 "^|")
+
+    if [ -n "${ssl_cert}" ]; then
+        hotes_cert="${hotes_cert} ${hote}"
+        echo "${ssl_cert}" > "${hote}-certSSL.txt"
+    fi
 done
 
 echo -e "${JAUNE}100%${RESET}"
 
-# Verifie si la variable est vide
-if [ -z "${ssl_cert}" ]; then
-    echo "❌ Aucun Certificat SSL"
-    exit 1
+# Verifi si variable vide & affiche les hotes
+if [ -z "${hotes_cert}" ]; then
+    echo "❌ Aucun certificat SSL trouvé sur les hôtes scannés"
 else
     echo " "
-    echo -ne "🖥️ ${BLANC}Hotes${RESET}"
+    echo -ne "🖥️  ${BLANC}Hotes${RESET}"
     echo " "
-    echo " "
-    echo -ne "${VERT}[+]${RESET} ${hote}"
-    echo "${ssl_cert}" > "${dir}/mET/${hote}-certSSL.txt"
-    echo " "
-    echo " "
-    echo -e "💾 Sauvegardé --> "${dir}"/mET"
+    for hote in ${hotes_cert}; do
+        echo " "
+        echo -ne "${VERT}[+]${RESET} ${hote}"
+        echo " "
+        echo " "
+    done
+    echo -e "💾 Sauvegardé --> ${dir}/mET"
 fi
