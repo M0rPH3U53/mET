@@ -39,7 +39,9 @@ by M0rPH3U53
  
 🖥️ Hotes 
  
-[+] 192.168.56.254 
+[+] 192.168.0.254
+ 
+[+] 192.168.0.39
  
 💾 Sauvegardé --> /home/m0rph3u5/Scripts/mET
 ```
