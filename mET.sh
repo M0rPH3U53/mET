@@ -70,8 +70,6 @@ else
     for hote in ${hotes_cert}; do
         echo " "
         echo -ne "${VERT}[+]${RESET} ${hote}"
-        echo " "
-        echo " "
     done
     echo -e "💾 Sauvegardé --> ${dir}/mET"
 fi
