@@ -60,7 +60,7 @@ done
 
 echo -e "${JAUNE}100%${RESET}"
 
-# Verifi si variable vide & affiche les hotes
+# Verifi si variable vide & affiche les hotes avec certificat SSL
 if [ -z "${hotes_cert}" ]; then
     echo "❌ Aucun certificat SSL trouvé sur les hôtes scannés"
 else
