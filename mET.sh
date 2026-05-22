@@ -65,7 +65,7 @@ if [ -z "${hotes_cert}" ]; then
     echo "❌ Aucun certificat SSL trouvé sur les hôtes scannés"
 else
     echo " "
-    echo -ne "🖥️  ${BLANC}Hotes${RESET}"
+    echo -ne "🔐  ${BLANC}Hotes avec certificat${RESET}"
     echo " "
     for hote in ${hotes_cert}; do
         echo " "
