@@ -71,5 +71,5 @@ else
         echo " "
         echo -ne "${VERT}[+]${RESET} ${hote}"
     done
-    echo -e "💾 Sauvegardé --> ${dir}/mET"
+    printf "\n💾 Sauvegardé --> %s/mET\n" "${dir}"
 fi
