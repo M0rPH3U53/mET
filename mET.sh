@@ -60,6 +60,8 @@ done
 
 echo -e "${JAUNE}100%${RESET}"
 
+mv ${hote}-certSSL.txt ${dir}/mET
+
 # Verifi si variable vide & affiche les hotes avec certificat SSL
 if [ -z "${hotes_cert}" ]; then
     echo "❌ Aucun certificat SSL trouvé sur les hôtes scannés"
