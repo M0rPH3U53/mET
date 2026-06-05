@@ -39,7 +39,7 @@ echo -ne "${BLEU}[i]${RESET} ${BLANC}Network:${RESET} "
 read network
 
 # Découverte réseau
-hotes=$(netdiscover -r ${network} -P | grep -E '[0-9]+\.' | awk '{print $1}')
+hotes=$(nmap -sn ${network} -oG - | grep -E '[0-9]+\.' | grep -v Nmap| awk '{print $2}')
 
 # Chemin
 dir=$(pwd)
