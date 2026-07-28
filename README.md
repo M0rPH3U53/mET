@@ -3,7 +3,7 @@
 
 Récupere les info de certificat SSL de maniere automatiser
 
-| outils | URLS |
+| outils | URL |
 | --- | --- |
 | 👁️ nmap | https://nmap.org |
 
