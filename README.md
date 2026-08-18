@@ -7,7 +7,7 @@ Récupere les info de certificat SSL de maniere automatiser
 | --- | --- |
 | 👁️ nmap | https://nmap.org |
 
-## 🛠️ Outils
+## 🚀 Installation
 
 ```
 ┌─[m0rph3u5@parrot]─[~]  
