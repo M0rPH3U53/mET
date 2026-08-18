@@ -69,6 +69,7 @@ else
     echo " "
     echo -ne "🔐 ${BLANC}Hotes avec certificat${RESET}"
     echo " "
+    
     for hote in ${hotes_cert}; do
         echo " "
         echo -ne "${VERT}[+]${RESET} ${hote}"
